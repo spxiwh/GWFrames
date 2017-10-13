@@ -55,7 +55,7 @@ Getting started
 ===============
 The first step is to clone the git repo and its submodules:
 ```
-git clone https://github.com/moble/GWFrames.git
+git clone https://github.com/spxiwh/GWFrames.git
 cd GWFrames
 git submodule init
 git submodule update
