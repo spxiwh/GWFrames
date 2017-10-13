@@ -149,7 +149,7 @@ try :
 except IOError :
     License = 'See LICENSE file in the source code for details.'
 
-swig_opts=['-globals', 'constants', '-c++', '-builtin', '-outdir', 'SWIG/', '-DUSE_GSL']
+swig_opts=['-globals', 'constants', '-c++',  '-outdir', 'SWIG/', '-DUSE_GSL']
 ## Add -py3 to swig_opts if this is python3
 try:
     import sys
@@ -229,7 +229,7 @@ setup(name="GWFrames",
                   extra_objects = glob.glob('spinsfast/build/temp/*/*.o'),
                   extra_link_args = ['-fPIC',],
                   # extra_link_args=['-Wl,-undefined,error'], # `-undefined,error` is not defined on some platforms...
-                  extra_compile_args=['-Wno-deprecated', '-Wno-unused-variable', '-DUSE_GSL', '-O3', '-ffast-math', '-ftree-vectorize'],
+                  extra_compile_args=['-Wno-deprecated', '-Wno-unused-variable', '-DUSE_GSL', '-O3', '-ftree-vectorize'],
                   ),
         ],
       # classifiers = ,
